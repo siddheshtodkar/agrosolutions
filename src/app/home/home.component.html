@@ -1,0 +1,28 @@
+<div class="section1">
+    <div class="middle-section" [ngClass]="register?'blurdiv':'nothing'">
+        <div class="title">Welcome To Agrosolutions</div>
+        <br>
+        <div class="subtitle">At Agrosolutions, we provide solutions to the farmer at every step. Also we help them to
+            increase their crop sales by providing profitable vendors to them, which in turn benefits both vendors and
+            farmers.</div>
+            <br>
+        <div class="login-form">
+            <input type="text" name="username" placeholder="Enter Username" [(ngModel)]="username">
+            <input type="text" name="password" placeholder="Enter Password" [(ngModel)]="password">
+            <button (click)="login()">Login</button>
+            <button (click)="register=true">Register</button>
+        </div>
+    </div>
+    <div class="register" *ngIf="register">
+        <div style="text-align: end;">
+            <i class="fa fa-close close-icon" (click)="register=false"></i>
+        </div>
+        <app-register></app-register>
+    </div>
+</div>
+<div class="section2">
+    <div class="card-container">
+        
+    </div>
+
+</div>

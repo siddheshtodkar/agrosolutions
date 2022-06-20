@@ -1,0 +1,21 @@
+footer{
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-bottom: 1em;
+}
+.about{
+    width: 40%;
+}
+p{
+    margin: 0;
+}
+.green-icons{
+    color: #a4f975;
+    margin-right: 5px;
+}
+.green{
+    color: #a4f975;
+}
