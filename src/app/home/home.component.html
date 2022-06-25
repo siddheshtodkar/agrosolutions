@@ -7,10 +7,14 @@
             farmers.</div>
             <br>
         <div class="login-form">
+            <div class="inputs">
             <input type="text" name="username" placeholder="Enter Username" [(ngModel)]="username">
             <input type="text" name="password" placeholder="Enter Password" [(ngModel)]="password">
+        </div>
+            <div class="buttons">
             <button (click)="login()">Login</button>
             <button (click)="register=true">Register</button>
+        </div>
         </div>
     </div>
     <div class="register" *ngIf="register">
@@ -22,7 +26,12 @@
 </div>
 <div class="section2">
     <div class="card-container">
-        
+        <div class="card" *ngFor="let card of homeJson">
+            <h3>{{card.title}}</h3>
+            <h4>{{card.subtitle}}</h4>
+            <img src="assets\images\{{card.image}}" alt="{{card.title}}">
+            <p>{{card.description}}</p>
+        </div>
     </div>
 
 </div>

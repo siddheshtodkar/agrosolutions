@@ -2,19 +2,19 @@
     {
         "title": "Crop suggestion",
         "subtitle": "For farmers",
-        "image": "../../assets/images/crops.jpg",
+        "image": "vegetables.jpg",
         "description": "In just one click, we suggest suitable crops for farmers on the basis of region and temperature of that particular region. we will also provide information about how to grow that particular crop."
     },
     {
         "title": "Crop disease detection",
         "subtitle": "For farmers",
-        "image": "../../assets/images/crops.jpg",
+        "image": "corn.jpg",
         "description": "In this feature, we check whether the crop is healthy or diseased just by visualizing an image of a crop sent by a farmer using deep learning technology."
     },
     {
         "title": "Online market",
         "subtitle": "For farmers and vendors",
-        "image": "../../assets/images/crops.jpg",
+        "image": "vendor.jpg",
         "description": "Our online market feature provides profit to both farmers and vendors. Farmers will get a list of vendors and vendors will get a list of farmers from which they can choose according to their choice."
     }
 ]

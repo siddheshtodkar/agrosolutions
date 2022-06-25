@@ -4,16 +4,17 @@
     align-items: center;
     height: 100vh;
     max-width: 100vw;
-    position: relative;
     background-color: #173b23;
     color: white;
 }
 .middle-section{
-    width: 800px;
+    margin: 20px;
+    /* margin-top: 5em; */
+    width: 750px;
 }
 .title{
     text-align: center;
-    font-size: 62px;
+    font-size: 56px;
     font-weight: bold;
 }
 .subtitle{
@@ -21,12 +22,17 @@
     font-size: 20px;
     font-weight: normal;
 }
+.inputs{
+    display: flex;
+    flex-direction: row;
+}
 input{
     height: 40px;
     width: 260px;
     border-radius: 5px;
     padding: 0%;
     padding-left: 1%;
+    margin: 0.1em;
 }
 button{
     height: 44px;
@@ -35,6 +41,7 @@ button{
     color: black;
     border-radius: 5px;
     cursor: pointer;
+    margin: 0.1em;
 }
 .login-form{
     display: flex;
@@ -45,8 +52,14 @@ button{
 }
 
 .section2{
-    height: 100vh;
+    min-height: 100vh;
     max-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #7bae37;
+    /* position: relative; */
+
 }
 .register{
     position: absolute;
@@ -63,4 +76,50 @@ button{
     margin: 5px;
     color: black;
     cursor: pointer;
+}
+.card-container{
+    /* position: absolute; */
+    /* top: -15em; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.card{
+    height: auto;
+    width: 320px;
+    color: white;
+    background-color: #173b23;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+img{
+    margin-left: 20px;
+    width: 280px;
+    height: 200px;
+}
+h3{
+    color: black;
+    background-color: #a4f975;
+    margin: 0;
+    padding: 1em;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+h3, h4, p{
+    padding-inline: 20px;
+}
+@media only screen and (max-width:768px) {
+    .inputs{
+        flex-direction: column;
+    }
+    .login-form{
+        flex-direction: column;
+    }    
 }

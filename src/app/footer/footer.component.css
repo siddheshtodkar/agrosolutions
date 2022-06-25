@@ -9,6 +9,9 @@ footer{
 .about{
     width: 40%;
 }
+.about, .contact, .social{
+    padding-inline: 1em;
+}
 p{
     margin: 0;
 }
@@ -18,4 +21,13 @@ p{
 }
 .green{
     color: #a4f975;
+}
+
+@media only screen and (max-width:768px){
+    footer{
+        flex-direction: column;
+    }
+    .about{
+        width: auto;
+    }
 }
