@@ -10,6 +10,6 @@ export class CommonService {
     return this.http.get(path)
   }
   getWeather(lat:number, lon:number){
-    return this.http.get(`http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=8e1880f460a20463565be25bc573bdc6`)
+    return this.http.get(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=8e1880f460a20463565be25bc573bdc6`)
   }
 }

@@ -1,8 +1,49 @@
 .crop-suggestion{
     height: 100vh;
-    display: flex;
-    justify-content: center;
 }
 .weather{
-    
+    display: flex;
+}
+.title{
+    font-size: 54px;
+    font-weight: bold;
+}
+.temp-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.temp-head{
+    font-size: 26px;
+    font-weight: bold;
+}
+.temp{
+    display: flex;
+    flex-direction: column;
+}
+.temp-box{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+}
+.temp-value{
+    margin-bottom: 10px;
+}
+.press-box{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+}
+.press-head{
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.press-hum, .vis-wind{
+    display: flex;
+}
+.wind{
+    display: flex;
 }

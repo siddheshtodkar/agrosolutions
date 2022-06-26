@@ -1,24 +1,64 @@
 <div class="crop-suggestion">
-<div class="weather" *ngIf="isWeather">
     <div class="title">{{weather.name}}, {{weather.sys.country}}</div>
-    <div class="wth">Weather: {{weather.weather[0].main}}</div>
-    <div class="temp">Temperature:
-        <div class="min-temp">minimum: {{weather.main.temp_min | number: '1.0-0'}}</div>
-        <div class="min-temp">Actual: {{weather.main.temp | number: '1.0-0'}}</div>
-        <div class="min-temp">Feels like: {{weather.main.feels_like | number: '1.0-0'}}</div>
-        <div class="min-temp">Maximum: {{weather.main.temp_max | number: '1.0-0'}}</div>
+    <div class="weather" *ngIf="isWeather">
+        <div class="non-temp">
+            <div class="wth">Weather: {{weather.weather[0].main}}</div>
+            <div class="press-hum">
+                <div class="press-box">
+                    <div class="press-head">Pressure</div>
+                    <div class="press-value">{{weather.main.pressure}}</div>
+                </div>
+                <div class="press-box">
+                    <div class="press-head">Humidity</div>
+                    <div class="press-value">{{weather.main.humidity}}</div>
+                </div>
+            </div>
+            <div class="vis-wind">
+                <div class="press-box">
+                    <div class="press-head">Visibility</div>
+                    <div class="press-value">{{weather.visibility}}</div>
+                </div>
+                <div class="temp-div">
+                    <div class="temp-head">Wind</div>
+                    <div class="wind">
+                        <div class="temp-box">
+                            <div class="temp-value">{{weather.wind.speed}}</div>
+                            <div class="temp-type">Speed</div>
+                        </div>
+                        <div class="temp-box">
+                            <div class="temp-value">{{weather.wind.deg}}</div>
+                            <div class="temp-type">Degree</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="temp-div">
+            <div class="temp-head">Temperature</div>
+            <div class="temp">
+                <div class="temp-box">
+                    <div class="temp-value">{{weather.main.temp_min | number: '1.0-0'}}C</div>
+                    <div class="temp-type">Minimum</div>
+                </div>
+                <div class="temp-box">
+                    <div class="temp-value">{{weather.main.temp_max | number: '1.0-0'}}C</div>
+                    <div class="temp-type">Maximum</div>
+                </div>
+                <div class="temp-box">
+                    <div class="temp-value">{{weather.main.temp | number: '1.0-0'}}C</div>
+                    <div class="temp-type">Actual</div>
+                </div>
+                <div class="temp-box">
+                    <div class="temp-value">{{weather.main.feels_like | number: '1.0-0'}}C</div>
+                    <div class="temp-type">Feels Like</div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="pressure">pressure: {{weather.main.pressure}}</div>
-    <div class="humidity">humidity: {{weather.main.humidity}}</div>
-    <div class="wind">wind: 
-        <div class="speed">speed: {{weather.wind.speed}}</div>
-        <div class="degree">degree: {{weather.wind.deg}}</div>
-    </div>
-    <div class="visibility">visibility: {{weather.visibility}}</div> 
-    <div class="sunrise">sunrise: {{weather.sys.sunrise | date:'short'}}</div>
-    <div class="sunset">sunset: {{weather.sys.sunset | date:'short'}}</div>
-</div>
-<div class="suggestion">
 
-</div>
+
+
+    <div class="suggestion">
+    </div>
+
 </div>
