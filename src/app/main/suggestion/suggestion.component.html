@@ -1,0 +1,24 @@
+<div class="crop-suggestion">
+<div class="weather" *ngIf="isWeather">
+    <div class="title">{{weather.name}}, {{weather.sys.country}}</div>
+    <div class="wth">Weather: {{weather.weather[0].main}}</div>
+    <div class="temp">Temperature:
+        <div class="min-temp">minimum: {{weather.main.temp_min | number: '1.0-0'}}</div>
+        <div class="min-temp">Actual: {{weather.main.temp | number: '1.0-0'}}</div>
+        <div class="min-temp">Feels like: {{weather.main.feels_like | number: '1.0-0'}}</div>
+        <div class="min-temp">Maximum: {{weather.main.temp_max | number: '1.0-0'}}</div>
+    </div>
+    <div class="pressure">pressure: {{weather.main.pressure}}</div>
+    <div class="humidity">humidity: {{weather.main.humidity}}</div>
+    <div class="wind">wind: 
+        <div class="speed">speed: {{weather.wind.speed}}</div>
+        <div class="degree">degree: {{weather.wind.deg}}</div>
+    </div>
+    <div class="visibility">visibility: {{weather.visibility}}</div> 
+    <div class="sunrise">sunrise: {{weather.sys.sunrise | date:'short'}}</div>
+    <div class="sunset">sunset: {{weather.sys.sunset | date:'short'}}</div>
+</div>
+<div class="suggestion">
+
+</div>
+</div>

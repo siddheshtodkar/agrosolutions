@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonService } from '../services/common.service'
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -11,10 +12,10 @@ export class HomeComponent implements OnInit {
   password:string=''
   register:boolean=false
   homeJson:any=[]
-  constructor(private service: CommonService) { }
+  constructor(private service: CommonService, private router: Router) { }
 
   login(){
-
+    this.router.navigate(['main'])
   }
 
   ngOnInit(): void {
